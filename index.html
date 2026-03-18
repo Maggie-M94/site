@@ -9,9 +9,7 @@
         <title>Clere Winter 2026</title>
         <link rel="stylesheet" href="https://use.typekit.net/nmj3fov.css">
         <link rel="icon" type="image/x-icon" href="assets/favicon.png"/>
-        <!-- Bootstrap core CSS -->
         <link href="bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css"/>
-        <!-- Custom styles for this template -->
         <link href="style.css" rel="stylesheet"/>
         <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
     </head>
@@ -20,22 +18,20 @@
             <div class="container-fluid">
                 <div class="row">
                     <img src="assets/info-icon.png" class="info-btn" data-bs-toggle="modal" data-bs-target="#howToPlayModal" aria-label="How to play">
-                    <div class="col col-lg col-md col-sm">
-</div>
+                    <div class="col col-lg col-md col-sm"></div>
                     <div class="col-12 col-md-12 col-lg-12 col-sm-12">
                         <img src="assets/desktop-header.png" id="desktop" class="w-100"/>
                         <img src="assets/mobile-header.png" id="mobile" class="w-100"/>
                     </div>
-                    <div class="col col-lg col-md col-sm">
-</div>
+                    <div class="col col-lg col-md col-sm"></div>
                 </div>
             </div>
         </section>
+
         <section>
             <div class="body-content container-fluid">
                 <div class="row">
-                    <div class="col-1 col-lg col-md col-sm-1"> 
-</div>
+                    <div class="col-1 col-lg col-md col-sm-1"></div>
                     <div class="col-10 col-lg-5 col-md-5 col-sm-10">
                         <div class="row mb-3">
                             <div class="col-12 col-lg-12 col-md-12 col-sm-12">
@@ -43,33 +39,32 @@
                                 <h5>Love playing games? Then you'll love playing Clere's exciting matching game for your chance to win!</h5>
                             </div>
                         </div>
+
                         <div class="row bg-element">
                             <div class="col-12 col-lg-12 col-md-12 col-sm-12 span">
                                 <h5><span><strong>Ready To Play?</strong></span></h5>
                                 <h5><span>Swipe the packs to form a row of 3 matching products, and your prize will be revealed</span></h5>
                             </div>
                         </div>
+
                         <div class="d-flex top-bar mt-4">
                             <div class="moves-box">
                                 Moves: <span class="ms-1" id="movesCount">0</span>
                             </div>
-                            <button type="button" class="btn shuffle-btn" id="shuffleBtn">
-                                Shuffle
-</button>
+                            <button type="button" class="btn shuffle-btn" id="shuffleBtn">Shuffle</button>
                         </div>
+
                         <div class="row game-board" id="gameBoard"></div>
                     </div>
-                    <div class="col-1 col-lg col-md col-sm-1"> 
-</div>
+                    <div class="col-1 col-lg col-md col-sm-1"></div>
                 </div>
             </div>
         </section>
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
+
         <script src="assets/js/popper.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="pgia/lib/pgia.js"></script>
+
         <div class="modal fade howto-modal" id="howToPlayModal" tabindex="-1" aria-labelledby="howToPlayModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-md">
                 <div class="modal-content howto-modal-content">
@@ -90,24 +85,19 @@
                             <div class="row">
                                 <div class="col-12 col-lg-12 text-center howto-block">
                                     <p class="howto-bullet mb-1">• <strong>Match 3 identical products</strong></p>
-                                    <p class="howto-copy mb-0">
-                                Swipe the packs to form a row of 3 matching Clere products to reveal your prize. </p>
+                                    <p class="howto-copy mb-0">Swipe the packs to form a row of 3 matching Clere products to reveal your prize.</p>
                                 </div>
                                 <div class="col-12 text-center howto-block">
                                     <p class="howto-bullet mb-1">• <strong>Limited moves</strong></p>
-                                    <p class="howto-copy mb-0">
-                                You start with only 5 moves. <br>Use them wisely to match products and maximize your chances of winning. </p>
+                                    <p class="howto-copy mb-0">You start with only 5 moves. <br>Use them wisely to match products and maximize your chances of winning.</p>
                                 </div>
                                 <div class="col-12 text-center howto-block">
                                     <p class="howto-bullet mb-1">• <strong>Shuffle option</strong></p>
-                                    <p class="howto-copy mb-0">
-                                If you’re stuck, tap Shuffle to rearrange/change the products and create new matching opportunities. </p>
+                                    <p class="howto-copy mb-0">If you’re stuck, tap Shuffle to rearrange/change the products and create new matching opportunities.</p>
                                 </div>
                                 <div class="col-12 text-center">
                                     <p class="howto-goodluck mb-3"><strong>Good luck!</strong></p>
-                                    <button type="button" class="btn howto-start-btn" data-bs-dismiss="modal">
-                                        START
-</button>
+                                    <button type="button" class="btn howto-start-btn" data-bs-dismiss="modal">START</button>
                                 </div>
                             </div>
                         </div>
@@ -115,220 +105,82 @@
                 </div>
             </div>
         </div>
-        <!-- Explosive Sound -->
+
         <audio id="bangSound" preload="auto">
             <source src="assets/sounds/explosion.mp3" type="audio/mpeg">
         </audio>
-        <!-- Game Script -->
+
         <script>
 document.addEventListener("DOMContentLoaded", function () {
     const boardSize = 3;
     const maxMoves = 5;
+    const swipeThreshold = 30;
 
     const allProducts = [
-        {
-            key: "yellow-jelly",
-            img: "assets/products/yellow-jelly.png",
-            alt: "Petroleum Jelly"
-        },
-        {
-            key: "cocoa-butter",
-            img: "assets/products/cocoa-butter.png",
-            alt: "Cocoa Butter"
-        },
-        {
-            key: "berries-lotion",
-            img: "assets/products/berries-lotion.png",
-            alt: "Repairing Lotion"
-        },
-        {
-            key: "marula-oil",
-            img: "assets/products/marula-oil.png",
-            alt: "Marula Oil"
-        },
-        {
-            key: "pure-gly",
-            img: "assets/products/pure-gly.png",
-            alt: "Pure Glycerine"
-        },
-        {
-            key: "dud",
-            img: "assets/products/dud.png",
-            alt: "Dud"
-        },
-        {
-            key: "avo-lotio",
-            img: "assets/products/avo-lotion.png",
-            alt: "avo-lotion"
-        },
-        {
-            key: "baby-jelly",
-            img: "assets/products/baby-jelly.png",
-            alt: "baby-jelly"
-        },
-        {
-            key: "avo-creme",
-            img: "assets/products/avo-creme.png",
-            alt: "avo-creme"
-        },
-        {
-            key: "cocoa-butter",
-            img: "assets/products/cocoa-butter.png",
-            alt: "cocoa-butter"
-        },
-        {
-            key: "berries-creme",
-            img: "assets/products/berries-creme.png",
-            alt: "berries-creme"
-        },
-        {
-            key: "cocoa-butter-lotion",
-            img: "assets/products/cocoa-butter-lotion.png",
-            alt: "cocoa-butter-lotion"
-        },
-        {
-            key: "cocoa-jelly",
-            img: "assets/products/cocoa-jelly.png",
-            alt: "cocoa-jelly"
-        },
-        {
-            key: "cocoa-lotion",
-            img: "assets/products/cocoa-lotion.png",
-            alt: "cocoa-lotion"
-        },
-        {
-            key: "cocoa-oil-creme",
-            img: "assets/products/cocoa-oil-creme.png",
-            alt: "cocoa-oil-creme"
-        },
-        {
-            key: "coconut-creme",
-            img: "assets/products/coconut-creme.png",
-            alt: "coconut-creme"
-        },
-        {
-            key: "glow-creme",
-            img: "assets/products/glow-creme.png",
-            alt: "glow-creme"
-        },
-        {
-            key: "glow-lotion",
-            img: "assets/products/glow-lotion.png",
-            alt: "glow-lotion"
-        },
-        {
-            key: "gly-co-lotion",
-            img: "assets/products/gly-co-lotion.png",
-            alt: "gly-co-lotion"
-        },
-        {
-            key: "gly-co-oil",
-            img: "assets/products/gly-co-oil.png",
-            alt: "gly-co-oil"
-        },
-        {
-            key: "glyoil-co-creme",
-            img: "assets/products/glyoil-co-creme.png",
-            alt: "glyoil-co-creme"
-        },
-        {
-            key: "lanolin-creme",
-            img: "assets/products/lanolin-creme.png",
-            alt: "lanolin-creme"
-        },
-        {
-            key: "lanolin-lotion",
-            img: "assets/products/lanolin-lotion.png",
-            alt: "lanolin-lotion"
-        },
-        {
-            key: "lanolin-oil-creme",
-            img: "assets/products/lanolin-oil-creme.png",
-            alt: "lanolin-oil-creme"
-        },
-        {
-            key: "pure-jelly",
-            img: "assets/products/pure-jelly.png",
-            alt: "pure-jelly"
-        },
-        {
-            key: "pure-rad-creme",
-            img: "assets/products/pure-rad-creme.png",
-            alt: "pure-rad-creme"
-        },
-        {
-            key: "radiance-creme",
-            img: "assets/products/radiance-creme.png",
-            alt: "radiance-creme"
-        },
-        {
-            key: "radiance-lotion",
-            img: "assets/products/radiance-lotion.png",
-            alt: "radiance-lotion"
-        },
-        {
-            key: "rich-lotion",
-            img: "assets/products/rich-lotion.png",
-            alt: "rich-lotion"
-        },
-        {
-            key: "tissue-oil",
-            img: "assets/products/tissue-oil.png",
-            alt: "tissue-oil"
-        },
-        {
-            key: "tropical-creme",
-            img: "assets/products/tropical-creme.png",
-            alt: "tropical-creme"
-        },
-        {
-            key: "tropical-lotion",
-            img: "assets/products/tropical-lotion.png",
-            alt: "tropical-lotion"
-        },
-        {
-            key: "vanilla-creme",
-            img: "assets/products/vanilla-creme.png",
-            alt: "vanilla-creme"
-        },
-        {
-            key: "vanilla-lotion",
-            img: "assets/products/vanilla-lotion.png",
-            alt: "vanilla-lotion"
-        }
+        { key: "yellow-jelly", img: "assets/products/yellow-jelly.png", alt: "Petroleum Jelly" },
+        { key: "cocoa-butter", img: "assets/products/cocoa-butter.png", alt: "Cocoa Butter" },
+        { key: "berries-lotion", img: "assets/products/berries-lotion.png", alt: "Repairing Lotion" },
+        { key: "marula-oil", img: "assets/products/marula-oil.png", alt: "Marula Oil" },
+        { key: "pure-gly", img: "assets/products/pure-gly.png", alt: "Pure Glycerine" },
+        { key: "dud", img: "assets/products/dud.png", alt: "Dud" },
+        { key: "avo-lotio", img: "assets/products/avo-lotion.png", alt: "avo-lotion" },
+        { key: "baby-jelly", img: "assets/products/baby-jelly.png", alt: "baby-jelly" },
+        { key: "avo-creme", img: "assets/products/avo-creme.png", alt: "avo-creme" },
+        { key: "cocoa-butter", img: "assets/products/cocoa-butter.png", alt: "cocoa-butter" },
+        { key: "berries-creme", img: "assets/products/berries-creme.png", alt: "berries-creme" },
+        { key: "cocoa-butter-lotion", img: "assets/products/cocoa-butter-lotion.png", alt: "cocoa-butter-lotion" },
+        { key: "cocoa-jelly", img: "assets/products/cocoa-jelly.png", alt: "cocoa-jelly" },
+        { key: "cocoa-lotion", img: "assets/products/cocoa-lotion.png", alt: "cocoa-lotion" },
+        { key: "cocoa-oil-creme", img: "assets/products/cocoa-oil-creme.png", alt: "cocoa-oil-creme" },
+        { key: "coconut-creme", img: "assets/products/coconut-creme.png", alt: "coconut-creme" },
+        { key: "glow-creme", img: "assets/products/glow-creme.png", alt: "glow-creme" },
+        { key: "glow-lotion", img: "assets/products/glow-lotion.png", alt: "glow-lotion" },
+        { key: "gly-co-lotion", img: "assets/products/gly-co-lotion.png", alt: "gly-co-lotion" },
+        { key: "gly-co-oil", img: "assets/products/gly-co-oil.png", alt: "gly-co-oil" },
+        { key: "glyoil-co-creme", img: "assets/products/glyoil-co-creme.png", alt: "glyoil-co-creme" },
+        { key: "lanolin-creme", img: "assets/products/lanolin-creme.png", alt: "lanolin-creme" },
+        { key: "lanolin-lotion", img: "assets/products/lanolin-lotion.png", alt: "lanolin-lotion" },
+        { key: "lanolin-oil-creme", img: "assets/products/lanolin-oil-creme.png", alt: "lanolin-oil-creme" },
+        { key: "pure-jelly", img: "assets/products/pure-jelly.png", alt: "pure-jelly" },
+        { key: "pure-rad-creme", img: "assets/products/pure-rad-creme.png", alt: "pure-rad-creme" },
+        { key: "radiance-creme", img: "assets/products/radiance-creme.png", alt: "radiance-creme" },
+        { key: "radiance-lotion", img: "assets/products/radiance-lotion.png", alt: "radiance-lotion" },
+        { key: "rich-lotion", img: "assets/products/rich-lotion.png", alt: "rich-lotion" },
+        { key: "tissue-oil", img: "assets/products/tissue-oil.png", alt: "tissue-oil" },
+        { key: "tropical-creme", img: "assets/products/tropical-creme.png", alt: "tropical-creme" },
+        { key: "tropical-lotion", img: "assets/products/tropical-lotion.png", alt: "tropical-lotion" },
+        { key: "vanilla-creme", img: "assets/products/vanilla-creme.png", alt: "vanilla-creme" },
+        { key: "vanilla-lotion", img: "assets/products/vanilla-lotion.png", alt: "vanilla-lotion" }
     ];
-
-    function playBangSound() {
-    if (!bangSound) return;
-
-    try {
-        bangSound.pause();
-        bangSound.currentTime = 0;
-        bangSound.play();
-    } catch (error) {
-        console.log("Sound could not play:", error);
-    }
-}
-
-    function getGameProducts(count = 6) {
-    const shuffled = [...allProducts].sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, count);
-}
-
-let products = getGameProducts(6);
-products = getGameProducts(6);
 
     const gameBoard = document.getElementById("gameBoard");
     const movesCount = document.getElementById("movesCount");
     const shuffleBtn = document.getElementById("shuffleBtn");
     const bangSound = document.getElementById("bangSound");
-   
 
+    let products = getGameProducts(6);
     let board = [];
     let movesUsed = 0;
     let selectedIndex = null;
     let locked = false;
     let gameEnded = false;
+
+    function playBangSound() {
+        if (!bangSound) return;
+
+        try {
+            bangSound.pause();
+            bangSound.currentTime = 0;
+            bangSound.play();
+        } catch (error) {
+            console.log("Sound could not play:", error);
+        }
+    }
+
+    function getGameProducts(count) {
+        const shuffled = [...allProducts].sort(() => Math.random() - 0.5);
+        return shuffled.slice(0, count);
+    }
 
     function cloneItem(item) {
         return {
@@ -362,40 +214,90 @@ products = getGameProducts(6);
         board[b] = temp;
     }
 
-    function renderBoard() {
-    gameBoard.innerHTML = "";
+    function getSwipeTargetIndex(startIndex, deltaX, deltaY) {
+        const position = rowColFromIndex(startIndex);
+        let targetRow = position.row;
+        let targetCol = position.col;
 
-    board.forEach(function (item, index) {
-        const tile = document.createElement("div");
-        tile.className = "game-tile";
-        tile.dataset.index = index;
-
-        if (selectedIndex === index) {
-            tile.classList.add("selected");
+        if (Math.abs(deltaX) > Math.abs(deltaY)) {
+            targetCol += deltaX > 0 ? 1 : -1;
+        } else {
+            targetRow += deltaY > 0 ? 1 : -1;
         }
 
-        const img = document.createElement("img");
-        img.src = item.img;
-        img.alt = item.alt;
-        img.className = "product-img";
+        if (targetRow < 0 || targetRow >= boardSize || targetCol < 0 || targetCol >= boardSize) {
+            return null;
+        }
 
-        const bang = document.createElement("img");
-        bang.src = "assets/explosive.png";
-        bang.alt = "";
-        bang.className = "bang-overlay";
+        return targetRow * boardSize + targetCol;
+    }
 
-        tile.appendChild(img);
-        tile.appendChild(bang);
+    function renderBoard() {
+        gameBoard.innerHTML = "";
 
-        tile.addEventListener("click", function () {
-            onTileClick(index);
+        board.forEach(function (item, index) {
+            const tile = document.createElement("div");
+            tile.className = "game-tile";
+            tile.dataset.index = index;
+            tile.dataset.swiped = "false";
+
+            if (selectedIndex === index) {
+                tile.classList.add("selected");
+            }
+
+            const img = document.createElement("img");
+            img.src = item.img;
+            img.alt = item.alt;
+            img.className = "product-img";
+
+            const bang = document.createElement("img");
+            bang.src = "assets/explosive.png";
+            bang.alt = "";
+            bang.className = "bang-overlay";
+
+            tile.appendChild(img);
+            tile.appendChild(bang);
+
+            tile.addEventListener("click", function () {
+                if (tile.dataset.swiped === "true") {
+                    tile.dataset.swiped = "false";
+                    return;
+                }
+
+                onTileClick(index);
+            });
+
+            tile.addEventListener("touchstart", function (event) {
+                const touch = event.changedTouches[0];
+                tile.dataset.touchStartX = touch.clientX;
+                tile.dataset.touchStartY = touch.clientY;
+                tile.dataset.swiped = "false";
+            }, { passive: true });
+
+            tile.addEventListener("touchend", function (event) {
+                if (locked || gameEnded) return;
+
+                const touch = event.changedTouches[0];
+                const startX = parseFloat(tile.dataset.touchStartX || "0");
+                const startY = parseFloat(tile.dataset.touchStartY || "0");
+                const deltaX = touch.clientX - startX;
+                const deltaY = touch.clientY - startY;
+
+                if (Math.abs(deltaX) >= swipeThreshold || Math.abs(deltaY) >= swipeThreshold) {
+                    const targetIndex = getSwipeTargetIndex(index, deltaX, deltaY);
+
+                    if (targetIndex !== null) {
+                        tile.dataset.swiped = "true";
+                        processMove(index, targetIndex);
+                    }
+                }
+            }, { passive: true });
+
+            gameBoard.appendChild(tile);
         });
 
-        gameBoard.appendChild(tile);
-    });
-
-    movesCount.textContent = movesUsed;
-}
+        movesCount.textContent = movesUsed;
+    }
 
     function getMatchesFromBoard(testBoard) {
         const matches = [];
@@ -454,90 +356,69 @@ products = getGameProducts(6);
     }
 
     async function resolveMatches() {
-    let matches = getMatches();
+        let matches = getMatches();
 
-    if (!matches.length) {
-        return false;
-    }
-
-    const uniqueIndexes = [...new Set(matches.flat())];
-
-    uniqueIndexes.forEach(function (index) {
-        const tile = gameBoard.querySelector('[data-index="' + index + '"]');
-        if (tile) {
-            tile.classList.add("bang");
+        if (!matches.length) {
+            return false;
         }
-    });
-    playBangSound();
 
-    const matchedProduct = board[matches[0][0]];
-    
+        const uniqueIndexes = [...new Set(matches.flat())];
 
-    await delay(500);
-
-    uniqueIndexes.forEach(function (index) {
-        board[index] = randomItem();
-    });
-
-    renderBoard();
-
-    let safety = 0;
-    while (boardHasMatch(board) && safety < 20) {
-        const followUpMatches = getMatches();
-        const nextIndexes = [...new Set(followUpMatches.flat())];
-
-        nextIndexes.forEach(function (index) {
+        uniqueIndexes.forEach(function (index) {
             const tile = gameBoard.querySelector('[data-index="' + index + '"]');
             if (tile) {
                 tile.classList.add("bang");
             }
         });
+
         playBangSound();
 
-        await delay(400);
+        await delay(500);
 
-        nextIndexes.forEach(function (index) {
+        uniqueIndexes.forEach(function (index) {
             board[index] = randomItem();
         });
 
         renderBoard();
-        safety++;
-        await delay(120);
-    }
 
-    return true;
-}
+        let safety = 0;
+        while (boardHasMatch(board) && safety < 20) {
+            const followUpMatches = getMatches();
+            const nextIndexes = [...new Set(followUpMatches.flat())];
+
+            nextIndexes.forEach(function (index) {
+                const tile = gameBoard.querySelector('[data-index="' + index + '"]');
+                if (tile) {
+                    tile.classList.add("bang");
+                }
+            });
+
+            playBangSound();
+
+            await delay(400);
+
+            nextIndexes.forEach(function (index) {
+                board[index] = randomItem();
+            });
+
+            renderBoard();
+            safety++;
+            await delay(120);
+        }
+
+        return true;
+    }
 
     function endGame() {
         gameEnded = true;
         shuffleBtn.disabled = true;
     }
 
-    async function onTileClick(index) {
+    async function processMove(firstIndex, secondIndex) {
         if (locked || gameEnded) return;
-
-        if (selectedIndex === null) {
-            selectedIndex = index;
-            renderBoard();
-            return;
-        }
-
-        if (selectedIndex === index) {
-            selectedIndex = null;
-            renderBoard();
-            return;
-        }
-
-        if (!isAdjacent(selectedIndex, index)) {
-            selectedIndex = index;
-            renderBoard();
-            return;
-        }
+        if (!isAdjacent(firstIndex, secondIndex)) return;
 
         locked = true;
-
-        const firstIndex = selectedIndex;
-        const secondIndex = index;
         selectedIndex = null;
 
         swapTiles(firstIndex, secondIndex);
@@ -561,6 +442,33 @@ products = getGameProducts(6);
         locked = false;
     }
 
+    async function onTileClick(index) {
+        if (locked || gameEnded) return;
+
+        if (selectedIndex === null) {
+            selectedIndex = index;
+            renderBoard();
+            return;
+        }
+
+        if (selectedIndex === index) {
+            selectedIndex = null;
+            renderBoard();
+            return;
+        }
+
+        if (!isAdjacent(selectedIndex, index)) {
+            selectedIndex = index;
+            renderBoard();
+            return;
+        }
+
+        const firstIndex = selectedIndex;
+        const secondIndex = index;
+
+        await processMove(firstIndex, secondIndex);
+    }
+
     function shuffleBoard() {
         if (locked || gameEnded) return;
 
@@ -582,6 +490,7 @@ products = getGameProducts(6);
     shuffleBtn.addEventListener("click", shuffleBoard);
 
     function initGame() {
+        products = getGameProducts(6);
         movesUsed = 0;
         selectedIndex = null;
         locked = false;
@@ -593,6 +502,6 @@ products = getGameProducts(6);
 
     initGame();
 });
-</script>
+        </script>
     </body>
 </html>
