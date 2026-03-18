@@ -404,6 +404,15 @@ span {
     }
 }
 
+.game-board {
+    touch-action: manipulation;
+}
+
+.game-tile {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
 /* Top controls */
 .top-bar {
     gap: 10px;
