@@ -575,6 +575,7 @@ span {
 
 .howto-copy {
     color: #1B3281;
+    font-weight: 500 !important;
     font-size: 1.2rem;
     line-height: 1.05;
     max-width: 320px;
