@@ -64,7 +64,7 @@ span-alt {
 
 p {
     font-variation-settings: "wght" 700;
-    font-weight: 700 !important;
+    font-weight: 500 !important;
     font-size: calc(1.1rem + 0.175vw);
     padding-top: 0px;
     text-transform: none;
