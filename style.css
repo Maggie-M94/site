@@ -51,7 +51,8 @@ h5 {
 }
 
 span-alt {
-    font-variation-settings: "wght" 500;
+    font-variation-settings: "wght" 700;
+    font-weight: 700 !important;
     font-size: calc(1.1rem + 0.175vw);
     padding-top: 0px;
     text-transform: none;
@@ -61,22 +62,26 @@ span-alt {
 }
 
 p {
-    font-variation-settings: "wght" 500;
-    font-size: 1em;
+    font-variation-settings: "wght" 700;
+    font-weight: 700 !important;
+    font-size: calc(1.1rem + 0.175vw);
     padding-top: 0px;
     text-transform: none;
-    color: #1B3281;
-    padding-bottom: 0px;
+    color: #ffffff;
+    padding-bottom: 10px;
     text-align: center;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    direction: ltr;
 }
 
 span {
     font-variation-settings: "wght" 200;
     text-transform: none;
     color: #ffffff !important;
+}
+
+.bolder {
+    font-variation-settings: "wght" 700 !important;
+    font-weight: 700 !important;
+    color: #1B3281 !important;
 }
 
 /* Buttons */
@@ -156,7 +161,21 @@ span {
     .howto-start-btn {
         min-width: 180px;
     }
+
+  
+
+
+
+    .footer-area .col-12 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-area video {
+        width: 90vh !important; /* adjust as needed */
+    }
 }
+
 
 /* Mobile rules */
 @media (max-width:767px) {
@@ -168,6 +187,14 @@ span {
         background-repeat: no-repeat;
         background-position: center bottom;
     }
+
+.footer-area .row {
+    justify-content: center;
+}
+
+.footer-area video {
+    width: 90vh !important;
+}
 
     .info-btn {
         position: absolute;
@@ -274,7 +301,7 @@ span {
     display: block;
     z-index: 3;
     position: relative;
-    padding-bottom: 17vh;
+    padding-bottom: 9vh;
 }
 
 .main {
@@ -369,6 +396,17 @@ span {
     filter: brightness(1.08) saturate(1.12);
 }
 
+/* Mobile Touch */
+.game-board {
+    touch-action: manipulation;
+}
+
+.game-tile {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Mobile Touch End */
 @keyframes bangPngPop {
     0% {
         opacity: 0;
@@ -402,15 +440,6 @@ span {
     100% {
         transform: scale(1);
     }
-}
-
-.game-board {
-    touch-action: manipulation;
-}
-
-.game-tile {
-    -webkit-user-select: none;
-    user-select: none;
 }
 
 /* Top controls */
