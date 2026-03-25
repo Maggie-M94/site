@@ -64,7 +64,7 @@ span-alt {
 
 p {
     font-variation-settings: "wght" 700;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
     font-size: calc(1.1rem + 0.175vw);
     padding-top: 0px;
     text-transform: none;
@@ -166,8 +166,12 @@ span {
     .footer-gif {
         max-width: 620px !important;
     }
-}
 
+    .game-board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 /* Mobile rules */
 @media (max-width:767px) {
@@ -202,6 +206,11 @@ span {
         visibility: hidden;
         display: none;
     }
+
+    .game-board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Large mobile rules */
@@ -217,6 +226,13 @@ span {
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: left top;
+    }
+
+    .game-board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0px;
+        margin: 0 auto;
     }
 
     .info-btn {
@@ -264,7 +280,6 @@ span {
     padding-left: 0px;
     padding-right: 0px;
 }
-
 
 .footer-area .row {
     display: flex;
@@ -320,13 +335,6 @@ span {
 .info-graphic {
     padding-top: 5vh;
     padding-bottom: 5vh;
-}
-
-.game-board {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0px;
-    margin: 0 auto;
 }
 
 .game-tile {
@@ -510,6 +518,7 @@ span {
     padding: 10px 14px;
     position: relative;
     min-height: 54px;
+    border: none !important;
 }
 
 .howto-title {
@@ -575,7 +584,7 @@ span {
 
 .howto-copy {
     color: #1B3281;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
     font-size: 1.2rem;
     line-height: 1.05;
     max-width: 320px;
