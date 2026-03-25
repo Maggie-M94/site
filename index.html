@@ -590,12 +590,13 @@ document.addEventListener("DOMContentLoaded", function () {
         renderBoard();
     }
 
+    initGame();
+
     const howToPlayModalEl = document.getElementById("howToPlayModal");
 
-if (howToPlayModalEl && !localStorage.getItem("howToPlayShown")) {
+if (howToPlayModalEl) {
     const howToPlayModal = new bootstrap.Modal(howToPlayModalEl);
     howToPlayModal.show();
-    localStorage.setItem("howToPlayShown", "true");
 }
 });
 </script>
